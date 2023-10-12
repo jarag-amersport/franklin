@@ -1,0 +1,20 @@
+.content_hidden {
+  display: none;
+}
+
+.visibilityToggle_hidden {
+  display: none;
+}
+
+.name {
+  margin-top: 20px;
+  font-size: 42px;
+  color: #202342;
+  margin-bottom: 0;
+}
+
+.itemsCountContainer {
+  font-size: 14px;
+  color: #232644;
+  margin-top: 0;
+}

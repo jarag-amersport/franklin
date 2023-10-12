@@ -1,0 +1,95 @@
+.image {
+  display: block;
+  grid-area: image;
+}
+
+.name {
+  font-size: 14px;
+  line-height: 1;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.actionWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: actionwrap;
+}
+
+.deleteItem {
+  --fill: white;
+  --stroke: gray;
+
+  background: none;
+  padding: 0;
+  min-width: 30px;
+}
+
+.deleteItem:hover {
+  --stroke: black;
+  --fill: white;
+
+  background: none;
+  padding: 0;
+}
+
+.priceContainer {
+  font-size: 14px;
+  grid-area: price;
+}
+
+.options {
+  display: flex;
+  list-style-type: none;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.optionName {
+  flex-basis: 50%;
+  flex-grow: 1;
+  text-transform: uppercase;
+  color: var(--clr-dark-grey);
+}
+
+.optionValue {
+  flex-basis: 50%;
+  flex-grow: 1;
+  text-transform: none;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.addToCart {
+  grid-area: addtocart;
+}
+
+.imageContainer {
+  grid-area: image;
+}
+
+@media (max-width: 800px) {
+  .root {
+    display: grid;
+    grid-template:
+        'image actionwrap'
+        'image price'
+        'image option'
+        'image addtocart' / 30% 1fr;
+    grid-column-gap: 5px;
+  }
+
+  .root {
+    border-bottom: 1px solid #f3f3f3;
+  }
+
+  .root:first-child {
+    border-top: 1px solid #f3f3f3;
+  }
+}

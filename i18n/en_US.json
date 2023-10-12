@@ -1,0 +1,11 @@
+{
+  "adyen.creditCardSuccess": "Order Placed, thanks! Your order # is: {order_number}",
+  "adyen.creditFormError": "Your entered Credit Card information is not valid",
+  "adyen.errorToast": "Error while handling your Payment",
+  "adyen.paymentNote": "For safer contactless delivery. We strongly recommend you pay using credit card.",
+  "adyen.placeOrder": "Please wait we collect information from PSP ...",
+  "checkoutPage.guestCheckout": "Checkout",
+  "shippingInformation.cardTitle": "STEP 1. Shipping Information",
+  "shippingInformation.editTitle": "STEP 1. Shipping Information",
+  "shippingInformation.subtitle": "Where should we send your order?"
+}

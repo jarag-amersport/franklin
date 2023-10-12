@@ -1,0 +1,108 @@
+.image {
+    padding-right: 20px 18px 20px 0px;
+    width: 165px;
+}
+
+.imageContainer {
+    padding: 20px 8px 20px 0px;
+    border-bottom: 1px solid var(--highlight-background-color);
+}
+
+.price {
+    padding: 25px 11px 10px 0px;
+    border-bottom: 1px solid var(--highlight-background-color);
+    color: var(--clr-pink);
+    font-weight: 400;
+    font-size: 18px;
+    text-align:  right;
+}
+
+.price > span {
+    padding-right: 10px
+}
+
+.priceBeforeDiscount {
+    color: var(--highlight-background-color);
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+
+.discountText {
+    text-transform: uppercase;
+    color: var(--clr-blue);
+}
+
+
+.quantity {
+    padding-bottom: 15px;
+}
+
+.quantity form{
+    display: inline;
+    padding-bottom: 15px;
+}
+
+.productDetails {
+    border-bottom: 1px solid var(--highlight-background-color);
+    padding: 15px 10px 11px 10px;
+}
+
+.details {
+    font-family: var(--ff-gilroy-medium);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.style {
+    padding: 10px 15px 15px 0px;
+}
+
+.name {
+    font-size: 18px;
+    text-transform: none;
+}
+
+.actions {
+    font-family: var(--ff-gilroy-regular);
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.actions button {
+    border-radius: 0px;
+    padding-right: 20px;
+    padding-left: 0px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    border: 0px;
+    color: var(--clr-black);
+    font-size: 16px;
+    align-items: left;
+    justify-content: start;
+}
+
+.actions button span {
+  text-decoration: underline;
+  padding: 1px;
+}
+
+.actionButtonClass {
+    background: none;
+}
+
+.actionButtonClass:focus {
+    box-shadow: none;
+}
+
+.actions button:hover {
+    background-color: var(--clr-white);
+}
+
+@media (max-width: 800px) {
+  .price {
+    border-bottom: none;
+    text-align:  left;
+  }
+}

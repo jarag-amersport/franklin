@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://franklin.maidenform.com/sitemap_index.xml

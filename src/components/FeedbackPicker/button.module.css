@@ -1,0 +1,26 @@
+.root_lowPriority {
+    color: var(--clr-charcoal);
+    font-family: var(--ff-gilroy-bold);
+    font-size: 14px;
+    text-transform: uppercase;
+    min-width: 2rem;
+    border-radius: 5px;
+    border: 2px solid var(--clr-charcoal);
+}
+
+.root_lowPriority:hover {
+    color: var(--clr-white);
+    background: var(--clr-dark-pink);
+    border-color: var(--clr-dark-pink);
+}
+
+.root_lowPriority:focus {
+    color: var(--clr-white);
+    background: var(--clr-dark-grey);
+    border-color: var(--clr-dark-grey);
+}
+
+.root_lowPriority:disabled {
+    color: var(--clr-dark-grey);
+    border-color: var(--clr-dark-grey);
+}

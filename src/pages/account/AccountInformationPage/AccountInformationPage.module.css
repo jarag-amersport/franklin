@@ -1,0 +1,69 @@
+.root {
+
+}
+
+.root h1 {
+    font-family: var(--ff-gilroy-regular);
+    font-size: 4.2rem;
+    margin: 0 0 40px 0;
+    text-transform: uppercase;
+}
+
+.section {
+
+}
+
+.sectionHeader {
+    composes: sectionHeader from '../AccountOverview/AccountOverview.module.css';
+}
+
+.sectionHeader h2 {
+    font-family: var(--ff-gilroy-regular);
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.sectionHeader a {
+    text-decoration: underline;
+}
+
+.sectionContent {
+    composes: sectionContent from '../AccountOverview/AccountOverview.module.css';
+}
+
+.formInner {
+    margin-bottom: 2rem;
+}
+
+.changePasswordButton {
+    text-decoration: underline;
+    color: var(--link-color);
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 21px;
+    background-color: var(--clr-white);
+    border-radius: 0;
+    padding: 0;
+}
+
+.changePasswordButton:hover {
+    background-color: transparent;
+}
+
+.remoteAssistance {
+    appearance: auto;
+}
+
+.password {
+    position: relative;
+}
+
+.password button {
+    background: var(--clr-white);
+}
+
+@media (min-width: 1024px) {
+    .form {
+        width: 400px;
+    }
+}

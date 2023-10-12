@@ -1,0 +1,8 @@
+.optionLabel {
+    margin-bottom: 5px;
+    font-size: var(--body-font-size-xs);
+}
+
+.optionName {
+    margin-right: 10px;
+}

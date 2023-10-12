@@ -1,0 +1,12 @@
+.root {
+    color: #939393;
+    font-size: 14px;
+    font-family: var(--ff-gilroy-regular);
+}
+
+.root_error {
+    padding-top: 10px;
+    font-size: 14px;
+    font-family: var(--ff-gilroy-regular);
+    color: #c41b53;
+}

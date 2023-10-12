@@ -1,0 +1,16 @@
+.root_highPriority {
+    background: #c41b53;
+    color: white;
+    font-family: var(--ff-gilroy-bold);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+.root_highPriority:hover {
+    background: #c41b53;
+}
+
+.root_highPriority:hover > span {
+    text-decoration: underline;
+}

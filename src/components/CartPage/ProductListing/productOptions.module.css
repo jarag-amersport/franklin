@@ -1,0 +1,7 @@
+.optionLabel {
+    margin: 5px 5px 15px 0px;
+}
+
+.optionName {
+    color: var(--clr-light-gray);
+}

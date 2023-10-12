@@ -1,0 +1,63 @@
+.root_highPriority {
+  border: unset !important;
+  background: #c41b53 !important;
+  color: var(--clr-white) !important;
+  font-family: var(--ff-gilroy-bold);
+  font-size: var(--body-font-size-xs);
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px;
+  padding: 5px 15px !important;
+}
+
+.root_highPriority:hover {
+  background: #c41b53!important;
+}
+
+.root_normalPriority {
+  border: unset !important;
+  background: var(--clr-light-gray) !important;
+  color: var(--clr-white) !important;
+  font-family: var(--ff-gilroy-bold);
+  font-size: var(--body-font-size-xs);
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px;
+  padding: 5px 15px !important;
+}
+
+.root_normalPriority:hover {
+  background: var(--clr-light-gray) !important;
+}
+
+.root_lowPriority {
+  background: none !important;
+  color: var(--clr-blue) !important;
+  font-family: var(--ff-gilroy-bold);
+  font-size: var(--body-font-size-xs);
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px;
+  padding: 5px 0 !important;
+  border: unset !important;
+  border-radius: 0 !important;
+}
+
+.root_lowPriority:hover {
+  background: none !important;
+}
+
+.root_normalPriority:hover > span,
+.root_highPriority:hover > span,
+.root_lowPriority:hover > span {
+  text-decoration: underline !important;
+}
+
+.root_normalPriority:active,
+.root_highPriority:active,
+.root_lowPriority:active,
+.root_normalPriority:focus,
+.root_highPriority:focus,
+.root_lowPriority:focus,
+.root_normalPriority:visited,
+.root_highPriority:visited,
+.root_lowPriority:visited {
+  box-shadow: none !important;
+}

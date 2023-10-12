@@ -1,0 +1,29 @@
+.options {
+    display: flex;
+    list-style-type: none;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    max-width: 200px;
+}
+
+.optionName {
+    flex-basis: 50%;
+    flex-grow: 1;
+    text-transform: uppercase;
+    color: var(--clr-dark-grey);
+}
+
+.optionValue {
+    flex-basis: 50%;
+    flex-grow: 1;
+    text-transform: none;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.optionLabel {
+
+}

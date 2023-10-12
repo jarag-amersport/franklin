@@ -1,0 +1,45 @@
+.body {
+    margin: 2.6rem 2.6rem 0;
+}
+
+.form {
+    display: grid;
+}
+
+.header {
+    margin: 2.6rem 2.6rem 0;
+    border-bottom: 1px solid var(--highlight-background-color);
+}
+
+.headerText {
+    font-family: var(--ff-gilroy-regular);
+    font-size: var(--heading-font-size-m);
+    font-weight: 400;
+    letter-spacing: .26px;
+    line-height: 1.96;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.radios {
+    grid-column: span 12 / span 12;
+    padding: 0 2.6rem 2.6rem;
+    font-family: var(--ff-gilroy-regular);
+    font-size: var(--body-font-size-s);
+}
+
+.buttons {
+    grid-column: span 12 / span 12;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 2.6rem 0;
+    border-top: 1px solid var(--highlight-background-color);
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}

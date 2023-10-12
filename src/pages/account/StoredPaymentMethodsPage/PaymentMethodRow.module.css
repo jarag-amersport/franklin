@@ -1,0 +1,27 @@
+.root {
+
+}
+
+.root > td:last-child {
+    text-align: right;
+}
+
+.root > td {
+    font-family: var(--ff-gilroy-regular);
+    vertical-align: top;
+}
+
+.rootMobile {
+
+}
+
+.rootMobile > span {
+    font-family: var(--ff-gilroy-regular);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 5px 0;
+}
+
+.rootMobile > span > .label {
+    margin-right: 10px;
+}

@@ -1,0 +1,98 @@
+.root {
+    border: 2px solid var(--clr-light-gray);
+    transition: .3s border-color;
+}
+
+.rootSelected {
+    position: relative;
+    border: 2px solid var(--clr-brand-magenta-dark);
+    transition: .3s border-color;
+}
+
+.selectionBadge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 29px;
+    width: 29px;
+    padding-top: 2px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--clr-brand-magenta-dark);
+    color: var(--clr-white);
+}
+
+.selectionBadgeIcon {
+    stroke-width: 3px;
+}
+
+.content {
+    position: relative;
+    display: grid;
+    margin-right: 30px;
+    padding: 20px 35px 20px 20px;
+    font-family: var(--ff-gilroy-regular);
+    font-size: var(--body-font-size-s);
+    line-height: 30px;
+    vertical-align: top;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.defaultCard {
+    grid-area: 1 / 1;
+}
+
+.editButton {
+    composes: absolute from global;
+    composes: p-xs from global;
+    composes: right-0 from global;
+    composes: top-0 from global;
+
+    composes: lg_right-1.5 from global;
+    composes: lg_top-1.5 from global;
+}
+
+.editButton:hover {
+    --fill: rgb(var(--venia-brand-color-1-700));
+}
+
+.editIcon {
+    composes: stroke-brand-base from global;
+    fill: var(--fill, white);
+    transition: fill 384ms var(--venia-global-anim-standard);
+}
+
+.defaultBadge {
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
+    composes: font-semibold from global;
+    composes: mb-1 from global;
+    composes: px-sm from global;
+    composes: py-1.5 from global;
+    composes: rounded-md from global;
+    composes: text-xs from global;
+    composes: w-max from global;
+}
+
+.name {
+    composes: font-semibold from global;
+}
+
+.address {
+    composes: gap-2xs from global;
+    composes: grid from global;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

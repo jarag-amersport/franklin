@@ -1,0 +1,35 @@
+.root {
+    composes: gap-y-2xs from global;
+    composes: grid from global;
+    composes: pt-xs from global;
+    composes: text-colorDefault from global;
+
+    grid-template-columns: 1fr 1fr;
+
+    padding: 15px;
+}
+
+.cardDetailsGrid {
+    composes: gap-y-2xs from global;
+    composes: grid from global;
+    composes: pt-xs from global;
+    composes: text-colorDefault from global;
+}
+
+.address {
+    composes: gap-2xs from global;
+    composes: grid from global;
+    composes: pt-xs from global;
+}
+
+.shippingMethodDetails {
+  background: var(--clr-brand-magenta-dark);
+  color: white;
+  padding: 20px;
+  margin: 20px;
+}
+
+.shippingMethodDetails a {
+  color: white;
+  text-decoration: underline;
+}

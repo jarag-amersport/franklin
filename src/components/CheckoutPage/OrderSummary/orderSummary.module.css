@@ -1,0 +1,21 @@
+.root {
+    font-family: var(--ff-gilroy-regular);
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 20px;
+    padding-left: 0;
+    color: var(--clr-black);
+    padding: 12px 0px;
+    border-bottom: 1px solid var(--highlight-background-color);
+}
+
+@media (max-width: 800px) {
+    .root {
+        padding: 0;
+        border: none;
+    }
+}

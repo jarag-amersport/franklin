@@ -1,0 +1,9 @@
+.label {
+    color: #939393;
+    font-family: var(--ff-gilroy-medium);
+    font-size: 14px;
+}
+
+.root {
+    margin-bottom: 10px;
+}

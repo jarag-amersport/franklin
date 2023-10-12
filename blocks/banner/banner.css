@@ -1,0 +1,113 @@
+/* stylelint-disable custom-property-pattern */
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: var(--globalBanner-height);
+  padding: 2px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.banner-wrapper,.banner,.promotion {
+  width: 100%;
+  height: 100%;
+}
+
+.banner .promotion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translateX(100%);
+}
+
+.banner .promotion:first-child {
+  transform: translateX(0%);
+}
+
+.banner .promotion.animated {
+  transition: 0.5s ease all;
+}
+
+.banner .modal {
+  display: none;
+}
+
+/* Content */
+
+.banner .promotion-content {
+  height: max-content;
+  font-family: var(--ff-obviously);
+  font-size: var(--body-font-size-s);
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.banner .promotion-content > * {
+  margin: 0 0.6em;
+}
+
+.banner .promotion-content a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: .15em;
+}
+
+.banner .promotion-content button {
+  background: none;
+  position: relative;
+  top: -.2em;
+  padding: 0 1em .4em;
+  display: inline-block;
+  border: 0;
+  border-radius: 0;
+  font-family: var(--ff-obviously-narrow);
+  font-weight: var(--fw-semibold);
+  font-size: var(--body-font-size-xs);
+  letter-spacing: .13em;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+  text-transform: inherit;
+}
+
+@media (min-width: 1024px) {
+  .banner .promotion-content {
+    padding-bottom: .15em;
+    font-size: var(--body-font-size-m);
+    line-height: 1.2;
+  }
+}
+
+
+/* Custom Banner Styles */
+
+.banner-container.banner-type-default {
+  background: var(--clr-brand-magenta-dark);
+}
+
+.banner-container.banner-type-default .promotion-content {
+  color: var(--clr-white);
+}
+
+.banner-container.banner-type-footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 2003;
+  background: var(--clr-black);
+}
+
+.banner-container.banner-type-footer .promotion-content {
+  color: var(--clr-white);
+}
+
+.banner-container.banner-type-promo {
+  background: #FFE2F6;
+}
+
+.banner-container.banner-type-promo .promotion-content {
+  color: var(--clr-black);
+  font-size: clamp(1.3rem, 3.6vw, 2.2rem);
+}

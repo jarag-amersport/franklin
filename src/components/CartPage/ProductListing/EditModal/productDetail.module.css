@@ -1,0 +1,23 @@
+.root {
+  font-family: var(--ff-gilroy-medium);
+  margin-bottom: 12px;
+}
+
+
+.productName {
+  font-family: var(--ff-gilroy-bold);
+}
+
+.stockRow {
+  display: flex;
+  justify-content: space-between;
+  color: #767676;
+  font-family: var(--ff-gilroy-medium);
+  font-size: 1.6rem;
+}
+
+.price {
+  margin-top: 6px;
+  margin-bottom: 12px;
+  color: #7f7f7f;
+}

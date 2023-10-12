@@ -1,0 +1,133 @@
+.root {
+
+}
+
+.root h1 {
+    font-family: var(--ff-gilroy-regular);
+    font-size: 2.6rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.orderStatus {
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.section {
+
+}
+
+.sectionHeader {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0 0 25px 0;
+    border-bottom: 1px solid #c6c6c6;
+    padding: 10px 0;
+}
+
+.sectionHeader h2 {
+    font-family: var(--ff-gilroy-regular);
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.sectionHeader a {
+    text-decoration: underline;
+}
+
+.sectionContent {
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+}
+
+.orderInformation .sectionContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.actions {
+    display: flex;
+    font-size: 1.4rem;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.actions a:last-child {
+    margin-left: auto;
+}
+
+.actions a {
+    text-decoration: underline;
+}
+
+.boxTitle, .box, .boxContent {
+    padding-bottom: 10px;
+}
+
+.boxTitle {
+    font-family: var(--ff-gilroy-medium);
+}
+
+.orderTotal {
+    margin-top: 30px;
+}
+
+@media (min-width: 1024px) {
+    .root h1 {
+        font-size: 4.2rem;
+    }
+
+    .title {
+        flex-direction: row;
+    }
+
+    .orderInformation .sectionContent {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .sectionItems {
+        margin-bottom: 0;
+    }
+}
+
+/* For printing */
+@media print {
+    :global(header) {
+        display: none;
+    }
+
+    :global(footer) {
+        display: none;
+    }
+
+    .orderInformation .sectionContent {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .actions {
+        display: none;
+    }
+
+    .sectionContent > button {
+        display: none;
+    }
+}

@@ -1,0 +1,33 @@
+.root {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.content {
+    flex: 5;
+}
+
+@media (min-width: 1024px) {
+    .root {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        flex: unset;
+        visibility: hidden;
+    }
+}
+
+/* For printing */
+@media print {
+    .sidebar {
+        display: none;
+    }
+}

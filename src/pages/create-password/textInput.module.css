@@ -1,0 +1,46 @@
+.input {
+    color: #939393;
+    font-size: 14px;
+    border: 1px solid #99969c;
+    border-radius: 0;
+    font-family:  var(--ff-gilroy-regular);
+    padding: 0 10px;
+    width: 100%;
+    height: 32px;
+    max-width: unset;
+}
+
+.input[type="text"], .input_error[type="text"] {
+    color: #939393;
+    font-size: 14px;
+    border: 1px solid #99969c;
+    border-radius: 0;
+    font-family:  var(--ff-gilroy-regular);
+    padding: 0 10px;
+    width: 100%;
+    height: 32px;
+    max-width: unset;
+}
+
+.input_error {
+    color: #939393;
+    font-size: 14px;
+    border: 1px solid #c41b53;
+    border-radius: 0;
+    font-family:  var(--ff-gilroy-regular);
+    padding: 0 10px;
+    width: 100%;
+    height: 32px;
+    max-width: unset;
+}
+
+.fieldIconAfter {
+    height: 32px;
+    grid-area: after;
+    display: flex;
+    padding-right: 5px;
+}
+
+.fieldIconAfter > button {
+    display: flex;
+}

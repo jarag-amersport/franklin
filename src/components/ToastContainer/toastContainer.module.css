@@ -1,0 +1,14 @@
+.root {
+    display: block;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 48px;
+    z-index: 10;
+}
+
+@media (min-width: 1024px) {
+    .root {
+        left: unset;
+    }
+}

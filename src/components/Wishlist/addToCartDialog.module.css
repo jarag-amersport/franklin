@@ -1,0 +1,49 @@
+.root {
+  padding: 20px;
+}
+
+.name {
+  font-family: var(--ff-gilroy-bold);
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #7f7f7f;
+  display: inline-block;
+  float: right;
+}
+
+.optionRoot {
+  border-top: 1px solid #cccccc;
+  padding-top: 10px;
+}
+
+.image {
+  display: block;
+  margin: auto;
+  padding: 0 30px 30px;
+  max-width: 300px;
+}
+
+.dialogHeaderButton {
+  --fill: #ccc;
+  --stroke: #ccc;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  background: none;
+  padding: 10px;
+  margin-left: auto;
+  display: block;
+}
+
+.dialogHeaderButton:hover {
+  --fill: gray;
+  --stroke: gray;
+
+  background: none;
+}
+
+.mask {
+  display: none;
+}

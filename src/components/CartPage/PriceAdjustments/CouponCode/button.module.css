@@ -1,0 +1,28 @@
+.root:focus {
+    background: none;
+    box-shadow: none;
+}
+
+.root_normalPriority {
+    background: none;
+    box-shadow: none;
+}
+
+.root_normalPriority:focus {
+    background: none;
+    box-shadow: none;
+}
+
+.root_normalPriority:focus-visible {
+    background: none;
+    box-shadow: none;
+    outline: unset;
+}
+
+.root_normalPriority:hover {
+
+}
+
+.input {
+    
+}

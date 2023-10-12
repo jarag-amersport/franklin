@@ -1,0 +1,42 @@
+.root {
+    composes: gap-xs from global;
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+
+    border: 1px solid rgb(120 120 120);
+}
+
+.payment_info_container {
+    /*composes: border-2 from global;*/
+    /*composes: border-solid from global;*/
+    /*composes: border-subtle from global;*/
+    composes: rounded-md from global;
+}
+
+.loading {
+    composes: root from '@magento/venia-ui/lib/components/LoadingIndicator/indicator.module.css';
+
+    composes: text-center from global;
+}
+
+.heading {
+    composes: border-0 from global;
+
+    composes: lg_border from global;
+}
+
+.stepTitle {
+    composes: editTitle from '../checkoutPage.module.css';
+}
+
+.stepTitleInactive {
+    composes: editTitle from '../checkoutPage.module.css';
+    background-color: rgb(120 120 120);
+}
+
+.payment_failed_message {
+    background: var(--clr-brand-magenta-dark);
+    color: var(--clr-white);
+    padding: 20px;
+    margin: 20px;
+}

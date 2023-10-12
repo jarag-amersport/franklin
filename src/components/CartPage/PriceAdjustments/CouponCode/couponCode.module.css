@@ -1,0 +1,130 @@
+.root {
+    margin: 13px 0px;
+}
+
+.fieldPromoCodeText {
+    width: 100%;
+}
+
+.fieldPromoCode span {
+    height: auto;
+}
+
+.fieldPromoCode input {
+    height: 44px;
+    padding: 0px 10px;
+    border: 1px solid var(--highlight-background-color);
+}
+
+
+.fieldApply {
+    font-family: var(--ff-gilroy-bold);
+    text-align: left;
+    padding-top: 15px;
+    width: 50%;
+}
+
+.fieldPromoCodeForm {
+    display: flex;
+}
+
+.fieldPromoCodeForm span {
+    display: block;
+    width: auto;
+}
+
+.fieldPromoCodeForm input {
+    width: 90%;
+}
+
+.promoCodeApplied {
+    color: var(--clr-pink);
+    border-bottom: 1px solid var(--highlight-background-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title {
+    color: var(--clr-black);
+    font-family: var(--ff-gilroy-medium);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.promoCodeAppliedList {
+    display: flex;
+}
+
+.appliedCodeEntry {
+    width: 90%;
+}
+
+.appliedCodeAction {
+    width: 10%;
+}
+
+
+.applyButton {
+    text-transform: uppercase;
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    cursor: pointer;
+    border-radius: unset;
+}
+
+.applyButton span {
+    text-decoration: underline;
+}
+
+.applyButton:hover span {
+    text-decoration: none;
+}
+
+
+.promoCodeApplied button {
+    background-color: var(--clr-pink);
+    color: var(--clr-white);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size:  12px;
+    min-width: 0;
+    padding: 0;
+}
+
+/* Styles for "add" view. */
+.entryForm,
+.entryFormError {
+    border-bottom: 1px solid var(--highlight-background-color);
+}
+
+/* TODO @TW: cannot compose */
+.entryForm input {
+    /* composes: border-error from global; */
+    border-color: var(--clr-light-gray);
+    border-radius: 0;
+}
+
+.entryForm button {
+    border-style: none;
+}
+
+/* TODO @TW: cannot compose */
+.entryFormError input:focus {
+
+}
+
+/* TODO @TW: cannot compose */
+.entryFormError p {
+
+}
+
+.errorContainer {
+
+}
+
+/* Styles for "removal" view. */
+.removeButton {
+    border: 0px;
+}

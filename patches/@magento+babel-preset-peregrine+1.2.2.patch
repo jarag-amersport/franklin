@@ -1,0 +1,13 @@
+diff --git a/node_modules/@magento/babel-preset-peregrine/lib/index.js b/node_modules/@magento/babel-preset-peregrine/lib/index.js
+index 2fd3c27..8084c85 100644
+--- a/node_modules/@magento/babel-preset-peregrine/lib/index.js
++++ b/node_modules/@magento/babel-preset-peregrine/lib/index.js
+@@ -50,7 +50,7 @@ const config = (api, opts = {}) => {
+ 
+     const envConfigs = {
+         development: {
+-            plugins: [...plugins, 'react-refresh/babel'],
++            plugins: [...plugins],
+             presets: [
+                 ['@babel/preset-env', { modules: false, targets: targets.dev }]
+             ]

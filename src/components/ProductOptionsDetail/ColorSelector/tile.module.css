@@ -1,0 +1,40 @@
+.root {
+    height: 38px;
+    width: 40px;
+    border-radius: 100%;
+    margin: 6px;
+    border: 2px solid var(--clr-white);
+    display: inline;
+    padding: 0;
+}
+
+.root_selected {
+    composes: root;
+    outline-color: var(--clr-black);
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+.root_focused {
+    composes: root;
+}
+
+.root_outOfStock {
+    composes: root;
+
+    cursor: not-allowed;
+    position: relative;
+}
+
+.root_outOfStock::after {
+    fill: white;
+    background: url(/icons/color-disabled.svg) no-repeat;
+    position: absolute;
+    content: '';
+    height: 100%;
+    left: 15%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}

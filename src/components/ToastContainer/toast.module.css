@@ -1,0 +1,96 @@
+.root {
+    background-color: var(--clr-white);
+    font-size: 1.4rem;
+    font-family: var(--ff-gilroy-regular);
+    box-shadow: 0 0 12px 2px rgba(0 0 0 / 35%);
+    padding: 2rem;
+}
+
+@keyframes toast-pulsate {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.icon {
+    grid-area: icon;
+}
+
+.infoToast {
+    composes: root;
+}
+
+.infoToast .content > .icon {
+    --stroke: var(--clr-pink);
+}
+
+.warningToast {
+    composes: root;
+}
+
+.warningToast .content > .icon {
+    --stroke: var(--clr-pink);
+}
+
+.errorToast {
+    composes: root;
+}
+
+.errorToast .content > .icon {
+    --stroke: var(--clr-red);
+}
+
+.successToast {
+    composes: root;
+}
+
+.successToast .content > .icon {
+    --stroke: var(--clr-pink);
+}
+
+.message {
+}
+
+.actions {
+}
+
+.content {
+    display: flex;
+    gap: 15px;
+}
+
+.controls {
+    text-align: right;
+}
+
+.actionButton {
+    margin: 0;
+    background: transparent;
+    --stroke: var(--clr-black);
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+.actionButton:hover {
+    background: transparent;
+}
+
+.dismissButton {
+    margin: 0;
+    background: transparent;
+    --stroke: var(--clr-black);
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+.dismissButton:hover {
+    background: transparent;
+}

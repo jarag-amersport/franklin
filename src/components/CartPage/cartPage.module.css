@@ -1,0 +1,46 @@
+.root {
+    display: flex;
+    font-family: var(--ff-gilroy-medium);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.18;
+}
+
+.heading_container h1 {
+    display: inline;
+    font-size: var(--ff-gilroy-medium);
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.continueShopping {
+    float: right;
+}
+
+.inYourBag {
+    width: 67%;
+    padding-right: 40px;
+    border: 1px solid var();
+}
+
+.orderSummary {
+    width: 33%;
+}
+
+@media (max-width: 800px) {
+  .root {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .inYourBag {
+    width: 100%;
+    padding-right: 0;
+    border: 1px solid var();
+  }
+
+  .orderSummary {
+    width: 100%;
+  }
+}

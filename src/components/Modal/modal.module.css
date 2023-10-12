@@ -1,0 +1,43 @@
+.backdrop {
+    background-color: rgba(51,51,51,.55);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9998;
+}
+
+.container {
+    position: fixed;
+    background-color: var(--clr-white);
+    z-index: 9999;
+    box-shadow: 0 0 12px 2px rgb(0 0 0 / 35%);
+    overflow-y: auto;
+
+    margin-left: -400px;
+    width: 800px;
+    left: 50%;
+    top: 50px;
+}
+
+@media (max-width: 1023px) {
+    .container {
+        margin-left: unset;
+        width: unset;
+        max-height: calc(100vh - 100px);
+        left: 2vw;
+        right: 2vw;
+        top: 50px;
+    }
+}
+
+.root {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.root_open {
+    visibility: visible;
+    opacity: 1;
+}

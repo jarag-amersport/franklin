@@ -1,0 +1,47 @@
+.item {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.productInfo {
+    width: 100%;
+}
+
+.productImage {
+    max-width: 105px;
+    width: 105px;
+    height: auto;
+}
+
+.productName {
+    font-size: var(--body-font-size-xs);
+    margin-bottom: 10px;
+}
+
+.productPrice {
+    margin-bottom: 5px;
+}
+
+.productOptions {
+
+}
+
+.toggleButton {
+    margin-top: -3px;
+    margin-bottom: 15px;
+    color: var(--clr-light-gray);
+}
+
+.toggleButton:hover,.toggleButton:focus {
+    background: none;
+}
+
+.deleteButton {
+    float: right;
+    color: var(--clr-dark-grey);
+}
+
+.deleteButton:hover,.deleteButton:focus {
+    background: none;
+}

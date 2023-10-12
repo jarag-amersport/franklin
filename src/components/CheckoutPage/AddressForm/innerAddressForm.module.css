@@ -1,0 +1,59 @@
+.root {
+    composes: gap-x-md from global;
+    composes: grid from global;
+    composes: grid-cols-12 from global;
+    composes: w-full from global;
+}
+
+.fieldLabel {
+    composes: fieldLabel from "src/components/CheckoutPage/checkoutPage.module.css";
+}
+
+.field {
+    composes: field from "src/components/CheckoutPage/checkoutPage.module.css";
+}
+
+.select {
+    composes: input from "src/components/CheckoutPage/checkoutTextInput.module.css";
+    display: inline-block;
+    padding: 15px 20px 15px 20px !important;
+    margin-right: 20px;
+    font-size: 16px;
+    background: transparent;
+}
+
+@media (max-width: 689px) {
+    .email,
+    .street0,
+    .street1,
+    .firstname,
+    .lastname,
+    .country,
+    .telephone,
+    .city,
+    .region,
+    .postcode {
+        grid-column: span 12 / span 12;
+    }
+}
+
+@media (min-width: 690px) {
+    .email,
+    .street0,
+    .street1 {
+        grid-column: span 12 / span 12;
+    }
+
+    .firstname,
+    .lastname,
+    .country,
+    .telephone {
+        grid-column: span 6 / span 6;
+    }
+
+    .city,
+    .region,
+    .postcode {
+        grid-column: span 4 / span 4;
+    }
+}

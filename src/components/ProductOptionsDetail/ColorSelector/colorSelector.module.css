@@ -1,0 +1,50 @@
+.root {
+  border-top: 1px solid #ccc;
+  padding-top: 12px;
+  margin-top: 12px;
+  font-family: var(--ff-gilroy-regular);
+}
+
+.selectSwatchName {
+
+}
+
+.swatches {
+    display: flex;
+}
+
+.swatch {
+    padding: 10px;
+}
+
+.colorButton {
+    width: 38px;
+    height: 38px;
+}
+
+.root_highPriority {
+    background: yellow;
+}
+
+.root_normalPriority {
+    background: yellow;
+}
+
+.title {
+  font-family: var(--ff-gilroy-regular);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.selectionLabel {
+  text-transform: uppercase;
+  color: black;
+}
+
+.selection {
+  font-size: 18px;
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  color: #767676;
+}

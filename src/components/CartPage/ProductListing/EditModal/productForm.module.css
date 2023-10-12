@@ -1,0 +1,68 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 30px 30px 10px;
+}
+
+.rootDialog {
+  max-width: 968px;
+  width: 98%;
+  background-color: var(--clr-white);
+  z-index: 0;
+}
+
+.root > div img {
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+.quantity {
+  font-family: var(--ff-gilroy-regular);
+  text-transform: uppercase;
+  font-size: 18px;
+  border-top: 1px solid #ccc;
+  padding-top: 12px;
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.dialogHeaderText {
+  font-family: var(--ff-gilroy-medium);
+}
+
+.dialogButtons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 30px;
+}
+
+.dialogButtons button {
+  color: white;
+  font-family: var(--ff-gilroy-bold);
+  border: none;
+  font-size: 14px;
+  padding: 4px;
+  min-width: 120px;
+}
+
+.dialogButtons button:focus {
+  box-shadow: none;
+}
+
+.dialogButtons button[type='reset'] {
+  background: black;
+}
+
+.dialogButtons button[type='submit'] {
+  background: #c41b53;
+}
+
+.imageColumn {
+  padding: 20px;
+}
+
+.productDetailColumn {
+
+}

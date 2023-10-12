@@ -1,0 +1,23 @@
+.content {
+    padding-bottom: 10px;
+    display: grid;
+}
+
+.actions {
+    display: flex;
+    font-size: 1.4rem;
+}
+
+.actions a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.actions a:nth-child(n + 2)::before {
+    border-left: 1px solid #a6a6a6;
+    content: '';
+    display: inline-block;
+    height: 12px;
+    margin: 0 10px;
+    vertical-align: -1px;
+}

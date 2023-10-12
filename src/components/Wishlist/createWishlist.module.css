@@ -1,0 +1,33 @@
+.dialogMask {
+  display: none;
+}
+
+.dialogForm {
+  padding: 10px;
+  background: white;
+  display: block;
+  max-width: 450px;
+  margin: 25vh auto auto;
+}
+
+.listName {
+  color: #7f7f7f;
+
+}
+
+.listName > span {
+  margin-left: 10px;
+}
+
+.dialogHeaderText {
+  font-family: var(--ff-gilroy-bold);
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.root {
+  margin-left: auto;
+}

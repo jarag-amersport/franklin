@@ -1,0 +1,15 @@
+.buttons {
+    grid-column: span 12 / span 12;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 2.6rem 0;
+    border-top: 1px solid var(--highlight-background-color);
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}

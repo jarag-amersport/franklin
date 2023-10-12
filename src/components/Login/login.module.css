@@ -1,0 +1,153 @@
+.form-section {
+    border-bottom: 1px solid #c6c6c6;
+    color: #000;
+    font-family: var(--ff-gilroy-regular);
+    line-height: 1.2;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    padding-bottom: 6px;
+}
+
+.submitButton {
+    margin-top: 30px;
+}
+
+.errorMessage {
+    font-size: 18px;
+    color: #c41b53;
+}
+
+.mandatory-fields-message {
+    font-size: small;
+    color: #c41b53;
+    font-family: var(--ff-gilroy-regular);
+}
+
+.new-customer-container {
+    display: grid;
+    grid-template-areas: "description"
+                    "actions";
+}
+
+.new-customer-description {
+    grid-area: description;
+}
+
+.new-customer-actions {
+    padding-top: 15px;
+    grid-area: actions;
+}
+
+.login-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "header header"
+            "login new-customer";
+    column-gap: 25px;
+}
+
+.grid-header {
+    grid-area: header;
+}
+
+.grid-login {
+    grid-area: login;
+}
+
+.buttonsContainer {
+    margin-top: 15px;
+}
+
+.buttonsContainer > button{
+    margin-right: 15px;
+}
+
+.grid-login label {
+    color: #939393;
+    font-family: var(--ff-gilroy-medium);
+    font-size: 14px;
+}
+.grid-new-customer {
+    grid-area: new-customer;
+}
+
+.desc-2-text, .desc-2-text-link {
+    font-family: var(--ff-gilroy-regular);
+    font-size: small;
+}
+
+.desc-2-text-link {
+    color: #c41b53 !important;
+}
+
+.header1 {
+    color: #000;
+    font-family: var(--ff-gilroy-regular);
+    font-size: 46px;
+    font-weight: 400;
+    letter-spacing: .26px;
+    line-height: 1.96;
+    padding-top: 10px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.desc-text {
+    font-family: var(--ff-gilroy-regular);
+    font-weight: 400;
+}
+
+.error-message {
+    font-family: var(--ff-gilroy-regular);
+    font-weight: 400;
+    font-size: smaller;
+    color: #c41b53;
+}
+
+.header2 {
+    color: #000;
+    font-family: var(--ff-gilroy-regular);
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: .26px;
+    line-height: 1.96;
+    text-align: left;
+    border-bottom: 1px solid rgba(223, 223, 223, 1);
+    margin-bottom: 25px;
+}
+
+.message {
+    font-size: 16px;
+}
+
+.forgotPasswordButton {
+    font-family: var(--ff-gilroy-regular);
+    color: #c41b53;
+    font-size: small;
+    border: unset;
+    background-color: unset;
+    text-decoration: unset;
+}
+
+.forgotPasswordButton:hover {
+    background-color: unset;
+    text-decoration: underline !important
+}
+
+@media screen and (max-width:1024px) {
+    .login-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "login login"
+            "new-customer new-customer";
+        row-gap: 15px;
+    }
+}

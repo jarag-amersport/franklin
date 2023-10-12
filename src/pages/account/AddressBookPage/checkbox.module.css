@@ -1,0 +1,16 @@
+.root {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #939393;
+    font-family: var(--ff-gilroy-medium);
+    font-size: 14px;
+}
+
+.icon {
+    display: none;
+}
+
+.label {
+
+}

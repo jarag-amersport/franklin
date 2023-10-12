@@ -1,0 +1,22 @@
+.root {
+    padding: 2rem 0;
+    max-width: 60rem;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 5px;
+    justify-content: left;
+}
+
+.buttonContainer > * {
+    flex: 1;
+}
+
+.legend {
+    margin-top: 1rem;
+    font-family: var(--ff-gilroy-medium);
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}

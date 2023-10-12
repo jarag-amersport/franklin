@@ -1,0 +1,13 @@
+.root {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+  .root {
+    display: flex;
+    flex-direction: column;
+  }
+}

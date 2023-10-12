@@ -1,0 +1,24 @@
+.root {
+
+}
+
+.root > td:last-child {
+    text-align: right;;
+}
+
+.root > td {
+    vertical-align: top;
+}
+
+.rootMobile {
+
+}
+
+.productName {
+    font-size: 1.8rem;
+}
+
+.thumbnail > img {
+    width: var(--width);
+    height: auto;
+}

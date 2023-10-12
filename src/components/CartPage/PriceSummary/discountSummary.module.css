@@ -1,0 +1,9 @@
+.individualDiscountsListLineItem {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 5px 0px;
+}
+.price {
+    color: var(--clr-pink);
+    justify-self: left;
+}

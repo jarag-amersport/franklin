@@ -1,0 +1,104 @@
+.root {
+
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleInfo {
+    flex: 2;
+    font-size: 1.6rem;
+}
+
+.titleInfo .red {
+    color: var(--clr-pink);
+}
+
+.root h1 {
+    flex: 1;
+    font-family: var(--ff-gilroy-regular);
+    font-size: 4.2rem;
+    margin: 0 0 40px 0;
+    text-transform: uppercase;
+}
+
+.section {
+
+}
+
+.orderTableDesktop {
+    display: none;
+}
+
+.orderTableEmpty {
+    text-align: center;
+}
+
+.orderTableMobile > div {
+    display: grid;
+}
+
+.orderTableMobile > div strong {
+    font-weight: bold;
+    padding-right: 8px;
+}
+
+.orderTableMobile > div a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.orderTableDesktop td > a:nth-child(n + 2)::before,
+.orderTableMobile > div a:nth-child(n + 2)::before {
+    border-left: 1px solid #a6a6a6;
+    content: '';
+    display: inline-block;
+    height: 12px;
+    margin: 0 10px;
+    vertical-align: -1px;
+}
+
+.loadMore {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.pagination {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 10px 0;
+}
+
+@media (min-width: 1024px) {
+    .title {
+        flex-direction: row;
+    }
+
+    .orderTableMobile {
+        display: none;
+    }
+
+    .orderTableDesktop {
+        display: table;
+        width: 100%;
+        font-size: 1.4rem;
+        border-collapse: collapse;
+    }
+    
+    .orderTableDesktop td, .orderTableDesktop th {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #c6c6c6;
+    }
+    
+    .orderTableDesktop td a {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .orderTableEmpty td {
+        text-align: center;
+    }
+}

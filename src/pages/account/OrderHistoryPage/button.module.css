@@ -1,0 +1,33 @@
+.root_highPriority {
+    background: var(--clr-pink);
+    color: var(--clr-white);
+    font-family: var(--ff-gilroy-bold);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+.root_highPriority:hover {
+    background: var(--clr-dark-pink);
+}
+
+.root_highPriority:hover > span {
+    text-decoration: underline;
+}
+
+.root_lowPriority {
+    background: var(--clr-charcoal);
+    color: var(--clr-white);
+    font-family: var(--ff-gilroy-bold);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+.root_lowPriority:hover {
+    background: var(--clr-dark-grey);
+}
+
+.root_lowPriority:hover > span {
+    text-decoration: underline;
+}

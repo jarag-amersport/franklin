@@ -1,0 +1,21 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.4rem;
+}
+
+.root > div {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.root > div > span:first-child {
+    flex: 1;
+    text-align: right;
+}
+
+.total > span:first-child {
+    text-transform: uppercase;
+}

@@ -1,0 +1,14 @@
+.root {
+}
+
+.buttons {
+    grid-column: span 12 / span 12;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 20px;
+}

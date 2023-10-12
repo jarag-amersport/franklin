@@ -1,0 +1,37 @@
+.favoritesHeading {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.myFavorites {
+  padding-right: 30px;
+}
+
+.favoritesHeading > button {
+  color: rgb(153 150 156);
+  font-size: 16px;
+  line-height: 32px;
+  background: none;
+  font-family: var(--ff-gilroy-regular);
+  border-radius: 0;
+  padding: 10px 5px;
+}
+
+.favoritesHeading > button:hover {
+  text-decoration: underline;
+}
+
+button.active {
+  color: #c41b53;
+  border-bottom: 4px solid #c41b53;
+  text-decoration: none;
+}
+
+button.active:hover {
+  text-decoration: none;
+}
+
+.favoritesHeading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}

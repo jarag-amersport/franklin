@@ -1,0 +1,19 @@
+.form-section {
+    border-bottom: 1px solid #c6c6c6;
+    color: #000;
+    font-family: var(--ff-gilroy-regular);
+    line-height: 1.2;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    padding-bottom: 6px;
+}
+
+.submitButton {
+    margin-top: 30px;
+}
+
+.errorMessage {
+    font-size: 18px;
+    color: #c41b53;
+}

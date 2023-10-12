@@ -1,0 +1,9 @@
+{
+  "name": "sitemap-checker",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "sitemap-checker.js",
+  "author": "",
+  "license": "Apache-2.0"
+}

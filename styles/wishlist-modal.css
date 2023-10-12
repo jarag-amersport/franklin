@@ -1,0 +1,43 @@
+.wishlist-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: rgb(0 0 0 / 50%);
+}
+
+.wishlist-modal-content {
+  padding: 40px;
+  margin: 40vh auto auto;
+  width: 80%;
+  max-width: 450px;
+  background: white;
+}
+
+.wishlist-modal ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.wishlist-modal .wishlist-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wishlist-modal .wishlist-modal-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.wishlist-modal .wishlist-modal-header button {
+  padding: 5px;
+  background: none;
+}
+

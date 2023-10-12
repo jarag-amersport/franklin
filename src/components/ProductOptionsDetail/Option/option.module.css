@@ -1,0 +1,24 @@
+.title {
+  font-family: var(--ff-gilroy-regular);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.root {
+  border-top: 1px solid #ccc;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.selectionLabel {
+  text-transform: uppercase;
+  color: black;
+}
+
+.selection {
+  font-size: 18px;
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  color: #767676;
+}

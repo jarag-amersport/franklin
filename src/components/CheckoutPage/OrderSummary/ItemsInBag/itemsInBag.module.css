@@ -1,0 +1,31 @@
+.title {
+    font-size: 20px;
+    color: var(--clr-black);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--highlight-background-color);
+}
+
+.productContainer {
+    max-height: 370px;
+    overflow-y: auto;
+    padding-top: 15px;
+}
+
+.productContainer > li {
+    padding-bottom: 20px;
+}
+
+.productContainer > li ~ li {
+    padding-top: 20px;
+    border-top: 1px solid var(--highlight-background-color);
+}
+
+.toggleButton {
+    float: right;
+    margin-top: -4px;
+    color: var(--clr-light-gray);
+}
+
+.toggleButton:hover,.toggleButton:focus {
+    background: none;
+}

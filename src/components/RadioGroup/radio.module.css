@@ -1,0 +1,31 @@
+.root {
+    grid-template-areas: 'input label';
+    grid-template-columns: min-content 1fr;
+}
+
+.input {
+    grid-area: input;
+}
+
+.icon {
+    grid-area: input;
+}
+
+/* TODO @TW: cannot compose */
+.icon svg {
+    /* composes: stroke-gray-600 from global; */
+    stroke: rgb(var(--venia-global-color-gray-600));
+}
+
+.label {
+    grid-area: label;
+}
+
+/* TODO @TW: cannot compose */
+.input:checked + .icon svg {
+    /* composes: stroke-brand-base from global; */
+    stroke: rgb(var(--venia-brand-color-1-700));
+}
+
+.input_shimmer {
+}
